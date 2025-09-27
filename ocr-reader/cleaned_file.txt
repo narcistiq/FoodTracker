@@ -1,1 +1,0 @@
-['bananas', 'broccoli crowns', 'sushi', 'milk', 'reese', 'egg', 'kingsize', 'm&m\'s', 'eggs']
