@@ -3,6 +3,21 @@ from PIL import Image, ImageEnhance, ImageOps
 import numpy as np
 
 
+def is_valid_image(filepath : str):
+    """
+    Takes in a `filepath`. Returns if it is a valid image or not.
+
+    Returns:
+        - True if filepath can be processed
+        - False if filepath cannot be processed
+    """
+    try:
+        with Image.open(filepath) as img:
+            img.verify()  # Verify file integrity
+        return True
+    except (IOError, SyntaxError):
+        return False
+
 def read_text(reader, image_path : str) -> List[str]:
     """
     Takes in an image path and returns a list of strings
