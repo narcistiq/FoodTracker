@@ -1,3 +1,5 @@
+from typing import List
+
 import easyocr
 from PIL import Image, ImageEnhance, ImageOps
 import numpy as np
