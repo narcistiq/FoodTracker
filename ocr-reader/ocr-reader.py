@@ -57,7 +57,3 @@ if __name__ == "__main__":
     # Initialize OCR reader
     reader = easyocr.Reader(['en'])
 
-# 4. Print results
-results = reader.readtext(numpy_image)
-cleaned = [result for (_, result, _) in results]
-print(cleaned)
