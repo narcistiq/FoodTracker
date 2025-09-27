@@ -63,13 +63,13 @@ def read_text(reader, image_path : str) -> List[str]:
     return cleaned
 
 if __name__ == "__main__":
-    # Get all images in folder
-    FOLDER = "./uploads"
-    files = get_files(FOLDER)
-    print(files)
+    print("OCR Reader launched.")
+    OUTPUT_FILE = "output.txt"
 
-    # Initialize OCR reader
-    reader = easyocr.Reader(['en'])
+    # Get all images in folder
+    FOLDER = "./uploads"    
+    files = get_files(FOLDER)
+    print(str(len(files)) + " files to process.")
 
     # Check that reader can read image
     images = []
@@ -77,4 +77,18 @@ if __name__ == "__main__":
         if is_valid_image(file):
             images.append(file)
 
-    print(images)
+    print(f"{len(images)}/{len(files)} of files are images found.")
+
+    # Initialize OCR reader
+    READER = easyocr.Reader(['en'])
+
+    texts = []
+    # Read text from each image
+    for i, image in enumerate(images):
+        text = read_text(READER, image)
+        texts.append(text)
+        print(f"Processed image {i+1} of {len(images)}.")
+    
+    with open(OUTPUT_FILE, "w") as file:
+        file.write(str(texts))
+        print(f"Saved to {OUTPUT_FILE}")
