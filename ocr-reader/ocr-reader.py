@@ -58,11 +58,9 @@ def read_text(reader, image_path : str) -> List[str]:
     # 3. Run OCR on the processed image
     results = reader.readtext(numpy_image)
 
-    # 4. Print results
-    results = reader.readtext(numpy_image)
+    # 4. Clean data
     cleaned = [result for (_, result, _) in results]
-    print(cleaned)
-
+    return cleaned
 
 if __name__ == "__main__":
     # Get all images in folder
