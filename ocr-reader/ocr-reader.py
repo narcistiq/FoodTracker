@@ -65,8 +65,10 @@ def read_text(reader, image_path : str) -> List[str]:
 
 
 if __name__ == "__main__":
-    # Folder containing all images
-    FOLDER = "./uploads/"
+    # Get all images in folder
+    FOLDER = "./uploads"
+    files = get_files(FOLDER)
+    print(files)
 
     # Initialize OCR reader
     reader = easyocr.Reader(['en'])
