@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Uploader from './components/Uploader'
+import FileUploader from './components/FileUploader'
 import './App.css'
 
 function App() {
@@ -8,7 +9,12 @@ function App() {
 
   return (
     <div>
-      <h1>Food Track</h1>
+      <h1>Receipt Recipes</h1>
+      <div className='upload-btn'>
+        <FileUploader />
+      </div>
+    
+      {/* <h1>Food Track</h1>
       
       <Uploader onDrop={FilesDropped} />
 
@@ -27,7 +33,7 @@ function App() {
             Final Upload
           </button>
         </div>
-      )}
+      )} */}
     </div>
   )
 }
