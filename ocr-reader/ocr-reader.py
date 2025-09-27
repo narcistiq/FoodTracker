@@ -73,3 +73,10 @@ if __name__ == "__main__":
     # Initialize OCR reader
     reader = easyocr.Reader(['en'])
 
+    # Check that reader can read image
+    images = []
+    for file in files:
+        if is_valid_image(file):
+            images.append(file)
+
+    print(images)
