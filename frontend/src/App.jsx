@@ -1,26 +1,34 @@
 import { useState } from 'react'
+import Uploader from './components/Uploader'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [files, setFile] = useState([])
+  const FilesDropped = (dropped) => { setFile(dropped) };
 
   return (
-    <>
-      <div>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <h1>Food Track</h1>
+      
+      <Uploader onDrop={FilesDropped} />
+
+      {files.length > 0 && (
+        <div style={{ marginTop: '20px' }}>
+          <h2>Files Ready for Upload:</h2>
+          <ul>
+            {files.map(file => (
+              // The 'name' property is a standard part of the File object
+              <li key={file.path || file.name}>
+                {file.name} - {file.size} bytes
+              </li>
+            ))}
+          </ul>
+          <button onClick={() => console.log('Uploading files...', files)}>
+            Final Upload
+          </button>
+        </div>
+      )}
+    </div>
   )
 }
 
