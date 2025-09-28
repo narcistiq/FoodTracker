@@ -36,26 +36,35 @@ recipes = list(collection.find({}, {"_id": 0}))
 class GeminiClient:
     def __init__(self):
         genai.configure(api_key=os.getenv("APIKEY"))
-        self.model = genai.GenerativeModel("gemini-2.0-flash")
+        self.model = genai.GenerativeModel(
+            "gemini-2.0-flash",
+            config={
+                "response_mime_type": "application/json",  # <-- comma added
+                "response_schema": [
+                    "Name",
+                    "Servings",
+                    "Ingredients",
+                    "Necessary Substitutions",
+                ],
+            },
+        )
+
+    def setup(self, actualingredients: list):
         base_prompt = "You have these recipes:\n\n"
+        base_prompt += "You have these ingredients" + actualingredients
         recipe_texts = []
-        for num, doc in enumerate(recipes):
+        for doc in recipes:
             title = doc.get("title", "")
             ingredients = doc.get("ingredients", "")
             steps = doc.get("servings", "")
             recipe_texts.append(f"• {title}\n  Ingredients: {ingredients}\Servings: {steps}\n")
-            print(ingredients)
-            if num == 50:   # ten items total
-                break
+            # print(ingredients) # debugging only
             self.context = base_prompt + "\n".join(recipe_texts)
 
-    def ask(self, question: str) -> str:
+    def ask(self):
+        question = "Please choose at least 3 recipes that contain these items. Make the necessary substitions as needed."
         prompt = self.context + f"\n\nQuestion: {question}\nAnswer:"
         response: GenerateContentResponse = self.model.generate_content(prompt)
-        return response.text
+        return response
 
 
-if __name__ == "__main__":
-    gemini = GeminiClient()
-    reply = gemini.ask("Which recipe uses onions or some kind of beef? As long as it has those it should be fine.")
-    print(reply)

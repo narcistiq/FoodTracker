@@ -4,6 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pymongo import MongoClient
 import os, shutil
 
+from recipes import GeminiClient
+
 app = FastAPI()
 origins = [
     "http://localhost:5173"
@@ -40,6 +42,10 @@ async def generate_recipes():
         Call AI model, generate recipes based on current ingredients in inventory, 
         and return recipes as json
     '''
+    gemini = GeminiClient()
+    gemini.setup() #THIS TAKES IN A LIST, ADJUST IF NEEDED
+    reply = gemini.ask()
+    # print(reply)
     pass
 
 @app.get("/recipes/")
