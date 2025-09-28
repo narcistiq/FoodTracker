@@ -4,44 +4,59 @@ import os
 from dotenv import load_dotenv
 import csv
 from pymongo import MongoClient
-load_dotenv()
-genai.configure(api_key=(os.getenv("APIKEY")))
+from pathlib import Path
 
-client = MongoClient("mongodb://localhost:27017/")
-csv_file = (r"recipes.csv")
+load_dotenv()
+
+client = MongoClient("mongodb://localhost:27017")
 
 db = client["Recipes"]
 collection = db["Recipes"]
-
-
-with open(csv_file, "r") as file:
+csv_path = Path(r"food-tracker/recipes.csv") 
+open_kwargs = {         
+    "mode": "r",
+    "encoding": "utf-8",
+    "newline": "",
+}
+with csv_path.open(**open_kwargs) as file:
     reader = csv.DictReader(file)
-    for row in reader:
-        collection.insert_one(row)
-        
-for i, j in collection.find():
-    print(j)
-    if i == 10:
-        break
-    
+    docs = list(reader)
+
+collection.insert_many(docs)
+# for i, doc in enumerate(client["Recipes"]["Recipes"].find(), start=1):
+#     print(doc)
+#     if i == 10:
+#         break    
+recipes = list(collection.find({}, {"_id": 0}))
+ 
     
 class GeminiClient:
     def __init__(self):
         # Create an instance of the model you want to use.
         # The correct class is GenerativeModel.
-        self.model = genai.GenerativeModel("gemini-2.5-flash")
+        genai.configure(api_key=(os.getenv("APIKEY")))
+        self.model = genai.GenerativeModel("gemini-2.0-flash")
         self.response: GenerateContentResponse | None = None
+        base_prompt = "You have these recipes:\n\n"
+        recipe_texts = []
+        for num, doc in enumerate(recipes):
+            # Example formatting – customise to your schema
+            title = doc.get("title", "Untitled")
+            ingredients = ", ".join(doc.get("ingredients", []))
+            steps = doc.get("instructions", "")
+            recipe_texts.append(f"• {title}\n  Ingredients: {ingredients}\n" + "Steps: {steps}\n")
+            if num == 10:
+                break
+        self.context = base_prompt + "\n".join(recipe_texts)
 
-    def give_context(self, prompt: str) -> GenerateContentResponse:
-        """Ask the model a question and store the reply."""
-        # Call generate_content directly on the model instance.
-        self.response = self.model.generate_content(prompt)
-        return self.response
+    def ask(self, question: str):
+        """Ask Gemini a new question, but keep the database context."""
+        prompt = self.context + f"\n\nQuestion: {question}\nAnswer:"
+        response = self.model.generate_content(prompt)
+        return response.text
 
 
-# # --- Example Usage ---
-# if __name__ == "__main__":
-#     my_client = GeminiClient()
-#     response = my_client.give_context("Do you work?")
-#     print(response.text)
-    
+if __name__ == "__main__":
+    gemini = GeminiClient()
+    reply = gemini.ask("Which recipe uses beef brisket and onions?")
+    print(reply)
