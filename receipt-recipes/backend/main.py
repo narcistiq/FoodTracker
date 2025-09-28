@@ -62,27 +62,84 @@ async def upload_receipt(file: UploadFile = File(...)):
 
 
     # 3. Read processed output
-    with open("ocr-reader/cleaned_file.txt", "r") as f:
+    CLEANED_FILE_PATH = os.path.join(OCR_DIR, "cleaned_file.txt")
+    with open(CLEANED_FILE_PATH, "r") as f:
         contents = f.read().strip()
-        parsed = ast.literal_eval(contents)   # [['tomato', 'onion', 'garlic']]
-        ingredients = [item for sublist in parsed for item in sublist]  # flatten
+        
+        # Remove markdown code block syntax if present
+        if contents.startswith("```python"):
+            contents = contents.replace("```python", "").replace("```", "").strip()
+        elif contents.startswith("````plaintext\n```python"):
+            contents = contents.replace("````plaintext\n```python", "").replace("```\n````", "").strip()
+        
+        parsed = ast.literal_eval(contents)   # Parse the list from file
+        
+        # Handle both flat list and nested list formats
+        if parsed and isinstance(parsed[0], list):
+            # Nested list format: [['tomato', 'onion', 'garlic']]
+            ingredients = [item for sublist in parsed for item in sublist]  # flatten
+        else:
+            # Flat list format: ['diced tomatoes', 'tomato paste', ...]
+            ingredients = parsed
+        
+        print(f"Extracted ingredients: {ingredients}")  # Debug logging
 
     # 4. Call /recipes/generate internally
-    recipes = generate_recipes(ingredients)
-
-    return recipes
+    try:
+        recipes = generate_recipes(ingredients)
+        print(f"Generated recipes: {recipes}")  # Debug logging
+        return recipes
+    except Exception as e:
+        print(f"Error generating recipes: {e}")  # Debug logging
+        raise HTTPException(status_code=500, detail=f"Recipe generation failed: {e}")
 
 
 @app.post("/recipes/generate/")
-async def generate_recipes(ingredients_text: list[str]):
+def generate_recipes(ingredients_text: list[str]):
     '''
         Call AI model, generate recipes based on current ingredients in inventory, 
         and return recipes as json
     '''
-    gemini = GeminiClient()
-    gemini.setup(ingredients_text) # THIS TAKES IN A LIST, ADJUST IF NEEDED
-    reply = gemini.ask()
-    return {"recipes": reply.text}
+    try:
+        print(f"Generating recipes for ingredients: {ingredients_text}")  # Debug logging
+        
+        # TODO: Remove this mock response when API quota is available
+        # Mock response for testing
+        mock_response = {
+            "recipes": [
+                {
+                    "name": "Tomato Chicken Pasta",
+                    "servings": "4",
+                    "ingredients": ["diced tomatoes", "boneless chicken breast", "pasta", "garlic"],
+                    "substitutions": "Can substitute chicken with impossible burger for vegetarian option"
+                },
+                {
+                    "name": "Bell Pepper Stir Fry",
+                    "servings": "2", 
+                    "ingredients": ["green bell peppers", "red bell peppers", "organic carrots", "chicken broth"],
+                    "substitutions": "Use vegetable broth instead of chicken broth for vegetarian"
+                },
+                {
+                    "name": "Green Bean Casserole",
+                    "servings": "6",
+                    "ingredients": ["green beans", "organic carrots", "french dressing", "onions"],
+                    "substitutions": "None needed - all ingredients available"
+                }
+            ]
+        }
+        return mock_response
+        
+        # Uncomment below when API quota is available:
+        # gemini = GeminiClient()
+        # gemini.setup(ingredients_text)
+        # reply = gemini.ask()
+        # print(f"Gemini response: {reply.text}")
+        # import json
+        # recipes_data = json.loads(reply.text)
+        # return recipes_data
+    except Exception as e:
+        print(f"Gemini API error: {e}")  # Debug logging
+        raise HTTPException(status_code=500, detail=f"Gemini API error: {e}")
 
 @app.get("/recipes/")
 async def get_recipes():

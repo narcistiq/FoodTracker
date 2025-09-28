@@ -39,13 +39,26 @@ class GeminiClient:
         self.model = genai.GenerativeModel(
             "gemini-2.0-flash",
             config={
-                "response_mime_type": "application/json",  # <-- comma added
-                "response_schema": [
-                    "Name",
-                    "Servings",
-                    "Ingredients",
-                    "Necessary Substitutions",
-                ],
+                "response_mime_type": "application/json",
+                "response_schema": {
+                    "type": "object",
+                    "properties": {
+                        "recipes": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {"type": "string"},
+                                    "servings": {"type": "string"},
+                                    "ingredients": {"type": "array", "items": {"type": "string"}},
+                                    "substitutions": {"type": "string"}
+                                },
+                                "required": ["name", "servings", "ingredients"]
+                            }
+                        }
+                    },
+                    "required": ["recipes"]
+                }
             },
         )
 
