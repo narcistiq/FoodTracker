@@ -12,18 +12,19 @@ client = MongoClient("mongodb://localhost:27017")
 
 db = client["Recipes"]
 collection = db["Recipes"]
-csv_path = Path(r"recipes.csv") 
+csv_path = Path(r"Receipes from around the world.csv") 
 open_kwargs = {         
     "mode": "r",
     "encoding": "utf-8",
     "newline": "",
 }
-docs = None
-with csv_path.open(**open_kwargs) as file:
-    reader = csv.DictReader(file)
-    docs = list(reader)
+rows = None
+with csv_path.open(encoding="cp1252") as f:      # Windows‑1252 (aka Latin‑1)
+    reader = csv.DictReader(f)
+    rows = list(reader)
+    
 collection.delete_many({})
-collection.insert_many(docs)
+collection.insert_many(rows)
 # for i, doc in enumerate(client["Recipes"]["Recipes"].find(), start=1):
 #     print(doc)
 #     if i == 10:
@@ -39,12 +40,12 @@ class GeminiClient:
         base_prompt = "You have these recipes:\n\n"
         recipe_texts = []
         for num, doc in enumerate(recipes):
-            title = doc.get("title", "Untitled")
-            ingredients = ", ".join(doc.get("ingredients", []))
-            steps = doc.get("instructions", "")
-            recipe_texts.append(f"• {title}\n  Ingredients: {ingredients}\nSteps: {steps}\n")
+            title = doc.get("title", "")
+            ingredients = doc.get("ingredients", "")
+            steps = doc.get("servings", "")
+            recipe_texts.append(f"• {title}\n  Ingredients: {ingredients}\Servings: {steps}\n")
             print(ingredients)
-            if num == 9:   # ten items total
+            if num == 50:   # ten items total
                 break
             self.context = base_prompt + "\n".join(recipe_texts)
 
@@ -56,5 +57,5 @@ class GeminiClient:
 
 if __name__ == "__main__":
     gemini = GeminiClient()
-    reply = gemini.ask("Which recipe uses beef brisket and onions?")
+    reply = gemini.ask("Which recipe uses onions or some kind of beef? As long as it has those it should be fine.")
     print(reply)

@@ -1,0 +1,162 @@
+recipe_name,cuisine,ingredients,cooking_time_minutes,prep_time_minutes,servings,calories_per_serving,dietary_restrictions
+Spicy Kimchi Fried Rice,Korean,"['Cooked rice', 'Kimchi', 'Gochujang', 'Soy sauce', 'Sesame oil', 'Onion', 'Garlic', 'Egg', 'Scallions', 'Vegetable oil']",25,15,2,450,['vegetarian']
+Classic Margherita Pizza,Italian,"['Pizza dough', 'Tomato sauce', 'Fresh mozzarella', 'Basil', 'Olive oil', 'Salt', 'Pepper']",20,30,4,350,['vegetarian']
+Coconut Chickpea Curry,Indian,"['Chickpeas', 'Coconut milk', 'Onion', 'Ginger', 'Garlic', 'Turmeric', 'Cumin', 'Coriander', 'Garam masala', 'Vegetable oil', 'Spinach', 'Rice']",35,15,4,480,"['vegan', 'vegetarian', 'gluten-free', 'dairy-free']"
+Pad See Ew with Tofu,Thai,"['Wide rice noodles', 'Tofu', 'Chinese broccoli', 'Soy sauce', 'Sweet soy sauce', 'Oyster sauce (optional)', 'Garlic', 'Egg', 'Vegetable oil']",20,10,2,520,['vegetarian']
+Beef Bourguignon,French,"['Beef chuck', 'Red wine', 'Bacon', 'Onion', 'Carrots', 'Celery', 'Mushrooms', 'Beef broth', 'Thyme', 'Bay leaf', 'Olive oil', 'Flour']",150,30,6,680,['nan']
+Chicken Enchiladas with Green Sauce,Mexican,"['Chicken breast', 'Corn tortillas', 'Green salsa', 'Sour cream', 'Cheese', 'Onion', 'Garlic', 'Cilantro', 'Vegetable oil']",40,25,6,420,['nan']
+Greek Lemon Herb Chicken and Potatoes,Greek,"['Chicken thighs', 'Potatoes', 'Lemon juice', 'Olive oil', 'Oregano', 'Rosemary', 'Garlic', 'Salt', 'Pepper']",60,15,4,550,"['gluten-free', 'dairy-free']"
+Swedish Meatballs with Cream Sauce,Swedish,"['Ground beef', 'Breadcrumbs', 'Milk', 'Egg', 'Onion', 'Butter', 'Allspice', 'Nutmeg', 'Beef broth', 'Heavy cream', 'Parsley']",45,20,4,620,['nan']
+Injera with Misir Wot,Ethiopian,"['Injera (flatbread)', 'Red lentils', 'Onion', 'Garlic', 'Ginger', 'Berbere spice blend', 'Tomato paste', 'Vegetable oil']",50,20,4,380,"['vegan', 'vegetarian', 'gluten-free']"
+Jollof Rice with Chicken,Nigerian,"['Rice', 'Chicken', 'Tomato paste', 'Tomatoes', 'Onion', 'Scotch bonnet pepper', 'Vegetable oil', 'Curry powder', 'Thyme', 'Bay leaf']",60,20,6,500,['nan']
+Peruvian Lomo Saltado,Peruvian,"['Beef sirloin', 'French fries', 'Onion', 'Tomato', 'Soy sauce', 'Vinegar', 'Aji amarillo paste', 'Cilantro', 'Vegetable oil', 'Rice']",30,15,4,580,['nan']
+Argentinian Empanadas with Beef,Argentinian,"['Empanada dough', 'Ground beef', 'Onion', 'Bell pepper', 'Hard-boiled eggs', 'Olives', 'Spices', 'Egg wash']",40,35,12,280,['nan']
+Australian Lamb Chops with Rosemary and Garlic,Australian,"['Lamb chops', 'Rosemary', 'Garlic', 'Olive oil', 'Salt', 'Pepper']",20,10,2,400,"['gluten-free', 'dairy-free']"
+Hawaiian Poi with Kalua Pig,Polynesian,"['Taro root (for poi)', 'Pork shoulder', 'Sea salt']",180,30,6,450,"['gluten-free', 'dairy-free']"
+Japanese Chicken Teriyaki with Steamed Broccoli,Japanese,"['Chicken thighs', 'Teriyaki sauce', 'Soy sauce', 'Mirin', 'Sugar', 'Ginger', 'Garlic', 'Broccoli', 'Sesame seeds', 'Vegetable oil']",30,15,2,380,['nan']
+Vietnamese Pho Bo (Beef Noodle Soup),Vietnamese,"['Beef broth', 'Rice noodles', 'Beef sirloin (thinly sliced)', 'Onion', 'Scallions', 'Cilantro', 'Bean sprouts', 'Lime', 'Hoisin sauce', 'Sriracha', 'Star anise', 'Cinnamon stick', 'Cardamom pods']",120,30,4,400,"['gluten-free', 'dairy-free']"
+Spanish Paella with Seafood,Spanish,"['Rice', 'Shrimp', 'Mussels', 'Clams', 'Chicken thighs', 'Chorizo', 'Onion', 'Bell peppers', 'Peas', 'Saffron', 'Olive oil', 'Chicken broth']",75,30,6,550,"['gluten-free', 'dairy-free']"
+Moroccan Tagine with Lamb and Apricots,Moroccan,"['Lamb shoulder', 'Dried apricots', 'Onion', 'Ginger', 'Cinnamon', 'Turmeric', 'Cumin', 'Coriander', 'Saffron', 'Almonds', 'Olive oil', 'Vegetable broth', 'Cilantro']",150,25,4,650,['nan']
+Brazilian Feijoada (Black Bean Stew),Brazilian,"['Black beans', 'Smoked sausage', 'Dried beef', 'Pork ribs', 'Bacon', 'Onion', 'Garlic', 'Bay leaves', 'Orange slices', 'Rice', 'Collard greens']",180,45,8,700,"['gluten-free', 'dairy-free']"
+American Clam Chowder (New England Style),American,"['Clams', 'Potatoes', 'Onion', 'Celery', 'Bacon', 'Milk', 'Cream', 'Butter', 'Flour', 'Thyme', 'Parsley']",60,20,6,480,['nan']
+Jamaican Jerk Chicken with Rice and Peas,Jamaican,"['Chicken thighs', 'Jerk seasoning', 'Soy sauce', 'Vinegar', 'Brown sugar', 'Scotch bonnet pepper', 'Thyme', 'Allspice', 'Onion', 'Garlic', 'Rice', 'Kidney beans', 'Coconut milk', 'Scallions', 'Vegetable oil']",120,30,4,600,['nan']
+Lebanese Fattoush Salad,Lebanese,"['Romaine lettuce', 'Tomatoes', 'Cucumbers', 'Bell peppers', 'Radishes', 'Green onions', 'Parsley', 'Mint', 'Toasted pita bread', 'Olive oil', 'Lemon juice', 'Sumac', 'Garlic', 'Salt']",15,20,4,250,"['vegan', 'vegetarian']"
+Irish Shepherd's Pie,Irish,"['Ground lamb', 'Onion', 'Carrots', 'Celery', 'Peas', 'Beef broth', 'Worcestershire sauce', 'Thyme', 'Bay leaf', 'Mashed potatoes', 'Butter', 'Milk', 'Cheese (optional)']",90,30,6,580,['nan']
+Argentine Chimichurri Steak with Roasted Vegetables,Argentinian,"['Steak (sirloin or ribeye)', 'Olive oil', 'Red wine vinegar', 'Parsley', 'Oregano', 'Garlic', 'Red pepper flakes', 'Salt', 'Pepper', 'Assorted vegetables (potatoes, carrots, zucchini, bell peppers)']",30,20,4,520,"['gluten-free', 'dairy-free']"
+Thai Green Curry with Shrimp,Thai,"['Green curry paste', 'Coconut milk', 'Shrimp', 'Bamboo shoots', 'Bell peppers', 'Thai basil', 'Fish sauce', 'Sugar', 'Vegetable oil', 'Lime leaves']",30,15,4,350,['nan']
+Korean Bibimbap (Mixed Rice with Meat and Vegetables),Korean,"['Cooked rice', 'Ground beef', 'Spinach', 'Carrots', 'Cucumber', 'Shiitake mushrooms', 'Egg', 'Gochujang sauce', 'Sesame oil', 'Soy sauce', 'Garlic', 'Sesame seeds', 'Vegetable oil']",40,30,2,500,['nan']
+Italian Risotto with Saffron and Parmesan,Italian,"['Arborio rice', 'Saffron threads', 'Chicken broth', 'Onion', 'White wine', 'Butter', 'Parmesan cheese', 'Olive oil', 'Salt', 'Pepper']",45,20,4,420,"['vegetarian', 'gluten-free']"
+Mexican Fish Tacos with Cabbage Slaw,Mexican,"['White fish fillets', 'Corn tortillas', 'Shredded cabbage', 'Mayonnaise', 'Lime juice', 'Cilantro', 'Red onion', 'Chili powder', 'Cumin', 'Vegetable oil']",25,20,4,380,['nan']
+French Onion Soup with Gruyere Croutons,French,"['Onions', 'Beef broth', 'Dry white wine', 'Butter', 'Olive oil', 'Thyme', 'Bay leaf', 'French bread slices', 'Gruyere cheese']",60,25,4,350,['vegetarian']
+Greek Spanakopita (Spinach and Feta Pie),Greek,"['Phyllo dough', 'Spinach', 'Feta cheese', 'Onion', 'Scallions', 'Eggs', 'Olive oil', 'Dill', 'Nutmeg', 'Salt', 'Pepper']",60,20,8,320,['vegetarian']
+Swedish Gravlax with Dill Sauce,Swedish,"['Salmon fillet', 'Salt', 'Sugar', 'White pepper', 'Fresh dill', 'Lemon', 'Mustard', 'White wine vinegar', 'Olive oil']",720,30,8,250,"['gluten-free', 'dairy-free']"
+Ethiopian Doro Wat (Chicken Stew) with Hard-Boiled Eggs,Ethiopian,"['Chicken pieces', 'Onion', 'Berbere spice blend', 'Ginger', 'Garlic', 'Tomato paste', 'Vegetable oil', 'Hard-boiled eggs']",90,25,6,480,['nan']
+Nigerian Egusi Soup with Pounded Yam,Nigerian,"['Egusi seeds (melon seeds)', 'Palm oil', 'Onion', 'Bell peppers', 'Scotch bonnet pepper', 'Leafy greens (spinach or bitter leaf)', 'Fish or meat', 'Seasoning cubes', 'Pounded yam (for serving)']",75,30,4,600,['nan']
+Peruvian Ceviche with Sweet Potato and Corn,Peruvian,"['White fish fillets', 'Lime juice', 'Red onion', 'Cilantro', 'Aji limo pepper', 'Sweet potato', 'Corn', 'Salt', 'Pepper']",15,20,4,280,"['gluten-free', 'dairy-free']"
+Argentinian Asado (Grilled Meats),Argentinian,"['Various cuts of beef (ribs, flank, chorizo)', 'Salt']",120,15,8,750,"['gluten-free', 'dairy-free']"
+Australian Barbecue Prawns with Garlic Butter,Australian,"['Prawns', 'Butter', 'Garlic', 'Parsley', 'Lemon juice', 'Salt', 'Pepper']",15,10,4,220,"['gluten-free', 'dairy-free']"
+Hawaiian Laulau (Pork Wrapped in Taro Leaves),Polynesian,"['Pork shoulder', 'Butterfish (optional)', 'Taro leaves', 'Ti leaves', 'Sea salt']",240,45,6,500,"['gluten-free', 'dairy-free']"
+Japanese Ramen with Pork Belly and Soft Egg,Japanese,"['Pork broth', 'Ramen noodles', 'Pork belly (chashu)', 'Soy sauce egg (ajitsuke tamago)', 'Scallions', 'Nori seaweed', 'Soy sauce', 'Mirin', 'Garlic', 'Ginger', 'Sesame oil']",180,40,2,650,['nan']
+Vietnamese Goi Cuon (Fresh Spring Rolls) with Peanut Sauce,Vietnamese,"['Rice paper', 'Shrimp', 'Rice vermicelli', 'Lettuce', 'Mint', 'Cilantro', 'Bean sprouts', 'Peanut butter', 'Hoisin sauce', 'Lime juice', 'Water', 'Sugar', 'Garlic', 'Chili sauce']",30,30,4,300,"['gluten-free', 'dairy-free']"
+Spanish Gazpacho (Cold Tomato Soup),Spanish,"['Ripe tomatoes', 'Cucumber', 'Bell pepper', 'Onion', 'Garlic', 'Olive oil', 'Sherry vinegar', 'Bread', 'Salt', 'Pepper']",15,20,6,150,"['vegan', 'vegetarian', 'dairy-free']"
+Moroccan Chicken Tagine with Olives and Preserved Lemons,Moroccan,"['Chicken pieces', 'Preserved lemons', 'Green olives', 'Onion', 'Ginger', 'Turmeric', 'Cumin', 'Coriander', 'Saffron', 'Olive oil', 'Chicken broth', 'Cilantro']",90,25,4,520,['nan']
+Brazilian Moqueca (Seafood Stew with Coconut Milk),Brazilian,"['White fish fillets', 'Shrimp', 'Coconut milk', 'Onion', 'Bell peppers', 'Tomatoes', 'Garlic', 'Cilantro', 'Palm oil', 'Lime juice', 'Salt', 'Pepper']",45,20,4,400,"['gluten-free', 'dairy-free']"
+American Jambalaya with Chicken and Sausage,American,"['Rice', 'Chicken', 'Andouille sausage', 'Onion', 'Bell peppers', 'Celery', 'Tomatoes', 'Chicken broth', 'Creole seasoning', 'Bay leaf', 'Vegetable oil']",75,25,6,550,['nan']
+Jamaican Ackee and Saltfish,Jamaican,"['Ackee', 'Salted codfish', 'Onion', 'Scallions', 'Scotch bonnet pepper', 'Tomato', 'Vegetable oil', 'Thyme', 'Black pepper']",40,20,4,350,"['gluten-free', 'dairy-free']"
+Lebanese Kibbeh (Baked Meat and Burghul Dish),Lebanese,"['Ground lamb or beef', 'Burghul (cracked wheat)', 'Onion', 'Spices (cinnamon, allspice)', 'Pine nuts', 'Olive oil']",60,30,8,380,['nan']
+Irish Colcannon (Mashed Potatoes with Kale or Cabbage),Irish,"['Potatoes', 'Kale or cabbage', 'Butter', 'Milk or cream', 'Scallions', 'Salt', 'Pepper']",30,15,4,300,['vegetarian']
+Argentine Milanesa with Mashed Potatoes,Argentinian,"['Beef steak (thinly sliced)', 'Breadcrumbs', 'Eggs', 'Garlic', 'Parsley', 'Olive oil', 'Salt', 'Pepper', 'Potatoes', 'Milk', 'Butter']",40,20,4,480,['nan']
+Thai Massaman Curry with Chicken and Potatoes,Thai,"['Massaman curry paste', 'Coconut milk', 'Chicken thighs', 'Potatoes', 'Onion', 'Peanuts', 'Fish sauce', 'Sugar', 'Tamarind paste', 'Bay leaves', 'Cardamom pods', 'Cinnamon stick', 'Vegetable oil']",60,20,4,500,['nan']
+Korean Bulgogi (Marinated Grilled Beef),Korean,"['Beef sirloin (thinly sliced)', 'Soy sauce', 'Sugar', 'Sesame oil', 'Garlic', 'Ginger', 'Onion', 'Scallions', 'Sesame seeds', 'Vegetable oil']",20,20,4,350,['nan']
+Mexican Pozole Rojo with Pork and Hominy,Mexican,"['Pork shoulder', 'Hominy', 'Dried ancho chiles', 'Dried guajillo chiles', 'Onion', 'Garlic', 'Oregano', 'Cumin', 'Bay leaf', 'Cabbage', 'Radishes', 'Lime', 'Cilantro', 'Vegetable oil']",180,45,8,600,['nan']
+French Ratatouille (Vegetable Stew),French,"['Eggplant', 'Zucchini', 'Bell peppers', 'Tomatoes', 'Onion', 'Garlic', 'Olive oil', 'Herbs de Provence', 'Salt', 'Pepper']",60,20,6,250,"['vegan', 'vegetarian', 'gluten-free', 'dairy-free']"
+Greek Moussaka (Eggplant and Meat Casserole),Greek,"['Eggplant', 'Ground lamb or beef', 'Onion', 'Garlic', 'Tomato paste', 'Red wine', 'Cinnamon', 'Allspice', 'Bay leaf', 'Bechamel sauce (milk, butter, flour, nutmeg, cheese)', 'Olive oil', 'Salt', 'Pepper']",90,40,8,500,['nan']
+Swedish Kanelbullar (Cinnamon Buns),Swedish,"['Wheat flour', 'Milk', 'Butter', 'Sugar', 'Yeast', 'Cinnamon', 'Cardamom', 'Egg (for wash)', 'Pearl sugar']",30,60,12,200,['vegetarian']
+Ethiopian Injera with Shiro Wot,Ethiopian,"['Injera (flatbread)', 'Chickpea flour', 'Onion', 'Garlic', 'Ginger', 'Berbere spice blend', 'Vegetable oil']",45,15,4,300,"['vegan', 'vegetarian', 'gluten-free']"
+Nigerian Suya (Grilled Spicy Skewered Meat),Nigerian,"['Beef, chicken, or ram meat', 'Suya spice blend (ground peanuts, chili, ginger, other spices)', 'Vegetable oil', 'Onion', 'Tomatoes']",30,20,4,400,"['gluten-free', 'dairy-free']"
+Peruvian Aji de Gallina (Spicy Chicken Stew),Peruvian,"['Shredded chicken', 'Aji amarillo peppers', 'Walnuts', 'Bread', 'Milk', 'Onion', 'Garlic', 'Cheese', 'Olive oil', 'Rice', 'Potatoes', 'Olives', 'Hard-boiled eggs']",60,30,4,450,['nan']
+Argentinian Locro (Hearty Stew with Corn and Beans),Argentinian,"['Dried white corn', 'Dried beans', 'Pork', 'Beef', 'Chorizo', 'Onion', 'Squash', 'Bacon', 'Spices', 'Vegetable broth']",180,45,8,550,['nan']
+Australian Lamingtons (Sponge Cake with Chocolate and Coconut),Australian,"['Sponge cake', 'Chocolate sauce', 'Desiccated coconut', 'Jam (optional)']",20,20,12,250,['vegetarian']
+Hawaiian Poke Bowl with Tuna and Avocado,Polynesian,"['Sushi-grade tuna', 'Cooked rice', 'Soy sauce', 'Sesame oil', 'Seaweed', 'Avocado', 'Scallions', 'Sesame seeds', 'Ginger', 'Onion', 'Chili flakes']",15,15,2,350,"['gluten-free', 'dairy-free']"
+Japanese Okonomiyaki (Savory Pancake),Japanese,"['Cabbage', 'Flour', 'Eggs', 'Water or dashi', 'Pork belly or shrimp (optional)', 'Okonomiyaki sauce', 'Japanese mayonnaise', 'Katsuobushi (bonito flakes)', 'Aonori (seaweed flakes)', 'Vegetable oil']",30,20,2,400,['nan']
+Vietnamese Banh Mi (Sandwich),Vietnamese,"['Baguette', 'Pate', 'Mayonnaise', 'Roast pork or grilled chicken', 'Pickled carrots and daikon', 'Cilantro', 'Jalapeño', 'Soy sauce']",15,15,2,300,['nan']
+Spanish Tortilla Española (Spanish Omelette),Spanish,"['Potatoes', 'Onions', 'Eggs', 'Olive oil', 'Salt', 'Pepper']",40,15,6,200,"['vegetarian', 'gluten-free', 'dairy-free']"
+Moroccan Harira Soup (Lentil and Tomato Soup),Moroccan,"['Lentils', 'Chickpeas', 'Tomatoes', 'Onion', 'Celery', 'Cilantro', 'Parsley', 'Vegetable broth', 'Spices (turmeric, cumin, ginger, cinnamon)', 'Lemon juice', 'Olive oil']",90,25,6,320,"['vegan', 'vegetarian']"
+Brazilian Pão de Queijo (Cheese Bread),Brazilian,"['Tapioca flour', 'Cheese (Minas or Parmesan)', 'Eggs', 'Milk', 'Vegetable oil', 'Salt']",30,10,12,150,"['vegetarian', 'gluten-free']"
+American Chili con Carne,American,"['Ground beef', 'Kidney beans', 'Diced tomatoes', 'Onion', 'Bell peppers', 'Chili powder', 'Cumin', 'Oregano', 'Beef broth', 'Garlic', 'Vegetable oil', 'Cheddar cheese (optional)', 'Sour cream (optional)']",90,25,6,40,['nan']
+Jamaican Brown Stew Fish,Jamaican,"['Fish fillets (snapper or cod)', 'Onion', 'Bell peppers', 'Tomatoes', 'Scallions', 'Thyme', 'Brown sugar', 'Soy sauce', 'Vinegar', 'Butter', 'Vegetable oil', 'Okra (optional)']",45,20,4,400,['dairy-free']
+Lebanese Tabbouleh Salad,Lebanese,"['Parsley', 'Bulgur (cracked wheat)', 'Tomatoes', 'Onion', 'Mint', 'Olive oil', 'Lemon juice', 'Salt', 'Pepper']",15,20,6,180,"['vegan', 'vegetarian']"
+Irish Boxty (Potato Pancakes),Irish,"['Potatoes (raw and mashed)', 'Flour', 'Baking soda', 'Buttermilk', 'Butter', 'Salt', 'Pepper']",20,15,6,150,['vegetarian']
+Argentine Carbonada Criolla (Beef and Vegetable Stew),Argentinian,"['Beef (stewing)', 'Potatoes', 'Sweet potatoes', 'Corn', 'Squash', 'Onion', 'Bell pepper', 'Tomatoes', 'Beef broth', 'Olive oil', 'Spices', 'Parsley']",90,30,6,450,['nan']
+Thai Panang Curry with Chicken,Thai,"['Panang curry paste', 'Coconut milk', 'Chicken thighs', 'Bell peppers', 'Green beans', 'Fish sauce', 'Sugar', 'Kaffir lime leaves', 'Vegetable oil', 'Peanuts (optional)']",35,15,4,420,['nan']
+Korean Japchae (Glass Noodles with Vegetables and Beef),Korean,"['Glass noodles (dangmyeon)', 'Beef sirloin (thinly sliced)', 'Carrots', 'Spinach', 'Onion', 'Mushrooms', 'Soy sauce', 'Sesame oil', 'Sugar', 'Garlic', 'Sesame seeds', 'Vegetable oil']",40,25,4,380,['nan']
+"Italian Carbonara (Pasta with Eggs, Cheese, Bacon)",Italian,"['Spaghetti', 'Eggs', 'Pecorino Romano cheese', 'Guanciale (or pancetta/bacon)', 'Black pepper', 'Salt']",25,10,4,450,['nan']
+Mexican Tamales with Chicken and Salsa Verde,Mexican,"['Masa harina', 'Chicken (shredded)', 'Chicken broth', 'Lard or vegetable shortening', 'Baking powder', 'Salt', 'Corn husks', 'Green salsa (tomatillos, chili peppers, onion, cilantro, garlic)']",180,60,12,300,['nan']
+French Crêpes Suzette (Pancakes with Orange Butter Sauce),French,"['Flour', 'Eggs', 'Milk', 'Butter', 'Sugar', 'Orange juice', 'Orange zest', 'Grand Marnier or other orange liqueur']",30,20,4,300,['vegetarian']
+Greek Pastitsio (Baked Pasta with Meat Sauce and Bechamel),Greek,"['Pasta (penne or ziti)', 'Ground beef or lamb', 'Onion', 'Garlic', 'Tomato paste', 'Red wine', 'Cinnamon', 'Allspice', 'Bay leaf', 'Bechamel sauce (milk, butter, flour, nutmeg, cheese)', 'Olive oil', 'Salt', 'Pepper']",90,40,8,550,['nan']
+Swedish Semlor (Cardamom Buns with Almond Paste and Cream),Swedish,"['Wheat flour', 'Milk', 'Butter', 'Sugar', 'Yeast', 'Cardamom', 'Almond paste', 'Heavy cream', 'Powdered sugar']",45,60,12,350,['vegetarian']
+Ethiopian Tibs (Sautéed Meat with Vegetables),Ethiopian,"['Beef or lamb (cubed)', 'Onion', 'Bell peppers', 'Tomato', 'Garlic', 'Ginger', 'Berbere spice blend', 'Vegetable oil', 'Rosemary']",30,15,4,400,"['gluten-free', 'dairy-free']"
+Nigerian Moi Moi (Steamed Bean Pudding),Nigerian,"['Black-eyed peas', 'Onion', 'Bell peppers', 'Scotch bonnet pepper', 'Vegetable oil', 'Fish or vegetable broth', 'Seasoning cubes', 'Eggs (optional)']",60,30,6,250,"['vegan', 'vegetarian', 'gluten-free', 'dairy-free']"
+Peruvian Anticuchos de Corazón (Grilled Beef Heart Skewers),Peruvian,"['Beef heart', 'Panca pepper paste', 'Vinegar', 'Garlic', 'Cumin', 'Oregano', 'Vegetable oil', 'Salt', 'Pepper', 'Potatoes or corn (for serving)']",30,20,4,300,"['gluten-free', 'dairy-free']"
+Argentinian Alfajores (Shortbread Cookies with Dulce de Leche),Argentinian,"['Flour', 'Cornstarch', 'Sugar', 'Butter', 'Egg yolks', 'Baking powder', 'Vanilla extract', 'Dulce de leche', 'Powdered sugar']",30,45,12,200,['vegetarian']
+Australian Pavlova (Meringue Dessert with Fruit),Australian,"['Egg whites', 'Sugar', 'Cornstarch', 'Vinegar', 'Vanilla extract', 'Whipped cream', 'Fresh fruit (berries, kiwi, passion fruit)']",90,30,8,280,"['vegetarian', 'gluten-free', 'dairy-free']"
+Hawaiian Kalua Pig (Slow-Cooked Shredded Pork),Polynesian,"['Pork shoulder', 'Liquid smoke (optional)', 'Sea salt']",480,15,8,400,"['gluten-free', 'dairy-free']"
+Japanese Miso Soup with Tofu and Seaweed,Japanese,"['Dashi (fish stock)', 'Miso paste', 'Tofu (cubed)', 'Wakame seaweed', 'Scallions']",15,5,4,80,"['vegan', 'vegetarian', 'gluten-free', 'dairy-free']"
+Vietnamese Bun Cha (Grilled Pork with Noodles and Herbs),Vietnamese,"['Pork belly and patties', 'Rice vermicelli', 'Lettuce', 'Mint', 'Cilantro', 'Pickled carrots and daikon', 'Nuoc cham dipping sauce (fish sauce, lime juice, sugar, water, garlic, chili)']",45,30,4,450,"['gluten-free', 'dairy-free']"
+Spanish Churros with Chocolate Sauce,Spanish,"['Flour', 'Water', 'Salt', 'Vegetable oil (for frying)', 'Sugar', 'Cinnamon', 'Dark chocolate', 'Milk']",30,15,6,350,['vegetarian']
+Moroccan Tanjia (Slow-Cooked Meat in a Clay Pot),Moroccan,"['Beef or lamb (stewing)', 'Saffron', 'Ginger', 'Cumin', 'Turmeric', 'Preserved lemons', 'Olive oil', 'Water']",240,20,4,550,['nan']
+Brazilian Brigadeiros (Chocolate Fudge Balls),Brazilian,"['Sweetened condensed milk', 'Cocoa powder', 'Butter', 'Chocolate sprinkles']",20,10,24,100,"['vegetarian', 'gluten-free']"
+"American Gumbo with Chicken, Sausage, and Shrimp",American,"['Chicken', 'Andouille sausage', 'Shrimp', 'Okra', 'Onion', 'Bell peppers', 'Celery', 'Tomatoes', 'Chicken broth', 'Dark roux (flour and oil)', 'Creole seasoning', 'Bay leaf', 'Rice (for serving)']",120,40,8,600,['nan']
+Jamaican Curry Goat with Rice and Peas,Jamaican,"['Goat meat (cubed)', 'Curry powder', 'Onion', 'Garlic', 'Ginger', 'Scotch bonnet pepper', 'Thyme', 'Allspice', 'Potatoes', 'Carrots', 'Coconut milk', 'Rice', 'Kidney beans', 'Scallions', 'Vegetable oil']",120,30,6,550,['dairy-free']
+Lebanese Manakeesh (Flatbread with Za'atar or Cheese),Lebanese,"['Flour', 'Yeast', 'Sugar', 'Salt', 'Olive oil', 'Water', ""Za'atar spice blend (sesame seeds, sumac, thyme)"", 'Cheese (Akawi or mozzarella)']",30,20,8,200,['vegetarian']
+Irish Soda Bread,Irish,"['Flour', 'Baking soda', 'Salt', 'Buttermilk', 'Raisins or caraway seeds (optional)']",45,10,8,180,['vegetarian']
+Argentine Flan with Dulce de Leche,Argentinian,"['Eggs', 'Milk', 'Sugar', 'Vanilla extract', 'Dulce de leche']",60,15,6,220,['vegetarian']
+Thai Tom Yum Soup with Shrimp,Thai,"['Shrimp', 'Lemongrass', 'Galangal', 'Kaffir lime leaves', 'Chili peppers', 'Fish sauce', 'Lime juice', 'Mushrooms', 'Tomatoes', 'Onion', 'Cilantro', 'Vegetable broth']",30,15,4,180,"['gluten-free', 'dairy-free']"
+Korean Tteokbokki (Spicy Rice Cakes),Korean,"['Rice cakes (tteok)', 'Gochujang (chili paste)', 'Gochugaru (chili powder)', 'Fish cakes', 'Onion', 'Scallions', 'Cabbage', 'Sesame seeds', 'Vegetable broth']",30,10,2,350,['nan']
+Italian Tiramisu (Coffee-Flavored Dessert),Italian,"['Ladyfingers', 'Espresso', 'Mascarpone cheese', 'Eggs', 'Sugar', 'Cocoa powder', 'Coffee liqueur (optional)']",30,20,8,300,['vegetarian']
+Mexican Chiles Rellenos (Stuffed Poblano Peppers),Mexican,"['Poblano peppers', 'Cheese (Monterey Jack or Oaxaca)', 'Flour', 'Eggs', 'Milk', 'Salt', 'Vegetable oil', 'Tomato sauce (optional)']",40,30,6,350,['vegetarian']
+French Soupe à l'Oignon Gratinée (French Onion Soup with Cheese Croutons),French,"['Onions', 'Butter', 'Olive oil', 'Dry white wine', 'Beef broth', 'Thyme', 'Bay leaf', 'French bread slices', 'Gruyere cheese']",60,25,4,380,['vegetarian']
+Greek Baklava (Sweet Pastry with Nuts and Syrup),Greek,"['Phyllo dough', 'Walnuts', 'Almonds', 'Cinnamon', 'Butter', 'Sugar', 'Honey', 'Water', 'Lemon juice']",90,30,12,300,['vegetarian']
+Swedish Fika (Coffee Break with Pastries),Swedish,"['Coffee', 'Cinnamon buns (kanelbullar)', 'Cardamom buns (kardemummabullar)', 'Cookies (småkakor)']",10,15,,,['vegetarian']
+Ethiopian Kitfo (Minced Raw Beef with Spices and Butter),Ethiopian,"['Beef (lean, minced)', 'Mitmita (chili powder blend)', 'Niter kibbeh (spiced clarified butter)', 'Cardamom', 'Salt']",15,10,2,300,"['gluten-free', 'dairy-free']"
+Nigerian Puff Puff (Deep-Fried Dough Balls),Nigerian,"['Flour', 'Sugar', 'Yeast', 'Water', 'Vegetable oil (for frying)']",30,15,24,50,"['vegan', 'vegetarian', 'dairy-free']"
+Peruvian Arroz con Pollo (Rice with Chicken),Peruvian,"['Rice', 'Chicken pieces', 'Onion', 'Garlic', 'Peas', 'Carrots', 'Cilantro', 'Chicken broth', 'Vegetable oil', 'Aji amarillo paste (optional)']",60,20,6,400,"['gluten-free', 'dairy-free']"
+Argentinian Choripan (Chorizo Sandwich),Argentinian,"['Chorizo sausage', 'Crusty bread roll', 'Chimichurri sauce']",20,10,4,350,['dairy-free']
+Australian Tim Tam Slam (Chocolate Biscuits with Hot Drink),Australian,"['Tim Tam biscuits', 'Hot chocolate or coffee']",5,2,1,200,['vegetarian']
+Hawaiian Haupia (Coconut Milk Pudding),Polynesian,"['Coconut milk', 'Cornstarch', 'Sugar', 'Water']",30,10,6,150,"['vegan', 'vegetarian', 'gluten-free', 'dairy-free']"
+Japanese Sushi Rolls (Various Types),Japanese,"['Sushi rice', 'Nori seaweed', 'Various fillings (fish, vegetables, avocado, etc.)', 'Soy sauce', 'Wasabi', 'Pickled ginger']",45,30,,,['gluten-free (depending on filling)']
+Vietnamese Summer Rolls with Peanut Sauce,Vietnamese,"['Rice paper', 'Shrimp', 'Pork (optional)', 'Rice vermicelli', 'Lettuce', 'Mint', 'Cilantro', 'Bean sprouts', 'Peanut sauce (peanut butter, hoisin, lime, water, sugar, chili)']",30,30,4,320,"['gluten-free', 'dairy-free']"
+Spanish Seafood Paella,Spanish,"['Rice', 'Shrimp', 'Mussels', 'Clams', 'Calamari', 'Onion', 'Bell peppers', 'Tomatoes', 'Garlic', 'Saffron', 'Olive oil', 'Fish broth', 'Parsley']",75,30,6,580,"['gluten-free', 'dairy-free']"
+Moroccan Mint Tea,Moroccan,"['Green tea', 'Fresh mint leaves', 'Sugar', 'Hot water']",10,5,,,"['vegan', 'vegetarian', 'gluten-free', 'dairy-free']"
+Brazilian Coxinha (Chicken Croquettes),Brazilian,"['Shredded chicken', 'Wheat flour', 'Chicken broth', 'Onion', 'Butter', 'Eggs', 'Breadcrumbs', 'Vegetable oil (for frying)']",60,40,12,200,['nan']
+American Apple Pie,American,"['Flour', 'Butter', 'Sugar', 'Salt', 'Apples', 'Cinnamon', 'Nutmeg', 'Egg wash']",60,30,8,350,['vegetarian']
+Jamaican Bammy (Cassava Flatbread),Jamaican,"['Cassava flour', 'Salt', 'Water', 'Coconut milk or oil (optional)']",30,10,6,120,"['vegan', 'vegetarian', 'gluten-free', 'dairy-free']"
+Lebanese Hummus with Pita Bread,Lebanese,"['Chickpeas', 'Tahini', 'Lemon juice', 'Garlic', 'Olive oil', 'Salt', 'Water', 'Pita bread']",15,10,4,250,"['vegan', 'vegetarian', 'dairy-free']"
+Irish Stew with Lamb and Vegetables,Irish,"['Lamb (stewing)', 'Potatoes', 'Carrots', 'Onion', 'Celery', 'Beef or lamb broth', 'Thyme', 'Bay leaf', 'Parsley', 'Salt', 'Pepper']",120,25,6,450,['dairy-free']
+Argentine Dulce de Leche (Caramel Spread),Argentinian,"['Milk', 'Sugar', 'Vanilla extract', 'Baking soda (optional)']",180,10,,,"['vegetarian', 'gluten-free']"
+Thai Red Curry with Beef,Thai,"['Red curry paste', 'Coconut milk', 'Beef (sliced)', 'Bamboo shoots', 'Bell peppers', 'Thai basil', 'Fish sauce', 'Sugar', 'Vegetable oil', 'Lime leaves']",35,15,4,450,['dairy-free']
+Korean Kimchi Jjigae (Kimchi Stew),Korean,"['Kimchi', 'Pork belly or tofu', 'Onion', 'Scallions', 'Gochujang (chili paste)', 'Gochugaru (chili powder)', 'Soy sauce', 'Sesame oil', 'Garlic', 'Water or anchovy broth']",40,15,4,320,['nan']
+Italian Pesto Genovese with Trofie Pasta,Italian,"['Trofie pasta', 'Fresh basil', 'Pine nuts', 'Garlic', 'Parmesan cheese', 'Pecorino Sardo cheese', 'Olive oil', 'Salt']",20,15,4,400,['vegetarian']
+Mexican Chicken Fajitas with Bell Peppers and Onions,Mexican,"['Chicken breast (sliced)', 'Bell peppers (various colors)', 'Onion (sliced)', 'Flour tortillas', 'Salsa', 'Sour cream', 'Guacamole', 'Lime juice', 'Chili powder', 'Cumin', 'Vegetable oil']",30,20,4,380,['nan']
+French Quiche Lorraine (Bacon and Cheese Tart),French,"['Shortcrust pastry', 'Bacon', 'Eggs', 'Cream', 'Milk', 'Gruyere cheese', 'Onion', 'Nutmeg', 'Salt', 'Pepper']",50,25,8,350,['nan']
+Greek Dolmades (Stuffed Grape Leaves with Rice and Herbs),Greek,"['Grape leaves', 'Rice', 'Ground beef or lamb (optional)', 'Onion', 'Fresh herbs (parsley, mint, dill)', 'Olive oil', 'Lemon juice', 'Vegetable broth', 'Salt', 'Pepper']",60,30,8,250,['nan']
+Swedish Pea Soup with Pork and Pancakes,Swedish,"['Yellow split peas', 'Smoked pork', 'Onion', 'Mustard', 'Thyme', 'Vegetable broth', 'Pancakes (flour, eggs, milk, butter, sugar)']",90,20,6,400,['dairy-free']
+Ethiopian Gomen (Collard Greens with Spices),Ethiopian,"['Collard greens', 'Onion', 'Garlic', 'Ginger', 'Vegetable oil', 'Spices (turmeric, cumin, coriander)', 'Green chili (optional)']",30,15,4,150,"['vegan', 'vegetarian', 'gluten-free', 'dairy-free']"
+Nigerian Jollof Rice with Beef,Nigerian,"['Rice', 'Beef (cubed)', 'Tomato paste', 'Tomatoes', 'Onion', 'Scotch bonnet pepper', 'Vegetable oil', 'Curry powder', 'Thyme', 'Bay leaf', 'Beef broth']",65,20,6,520,['dairy-free']
+Peruvian Papa a la Huancaína (Potatoes with Cheese Sauce),Peruvian,"['Potatoes', 'Queso fresco (fresh cheese)', 'Aji amarillo peppers', 'Milk', 'Vegetable oil', 'Salt', 'Crackers or bread (optional)', 'Olives', 'Hard-boiled eggs']",20,20,4,300,['vegetarian']
+Argentinian Provoleta (Grilled Provolone Cheese),Argentinian,"['Provolone cheese wheel', 'Olive oil', 'Oregano', 'Red pepper flakes (optional)']",10,5,4,200,"['vegetarian', 'gluten-free']"
+Australian Meat Pies,Australian,"['Shortcrust pastry', 'Ground beef', 'Onion', 'Carrots', 'Celery', 'Beef broth', 'Worcestershire sauce', 'Tomato paste', 'Flour', 'Egg (for wash)']",60,35,6,350,['nan']
+Hawaiian Chicken Long Rice,Polynesian,"['Chicken (shredded)', 'Long rice (cellophane noodles)', 'Chicken broth', 'Ginger', 'Onion', 'Soy sauce', 'Green onions']",45,15,6,280,"['gluten-free', 'dairy-free']"
+Japanese Tempura (Deep-Fried Seafood and Vegetables),Japanese,"['Shrimp', 'Assorted vegetables (sweet potato, eggplant, green beans, etc.)', 'Tempura batter (flour, egg, cold water)', 'Dipping sauce (soy sauce, dashi, mirin)']",40,30,4,350,['nan']
+Vietnamese Banh Xeo (Crispy Savory Crepes),Vietnamese,"['Rice flour', 'Coconut milk', 'Turmeric powder', 'Water', 'Shrimp', 'Pork belly (optional)', 'Bean sprouts', 'Onion', 'Mung beans', 'Lettuce', 'Mint', 'Nuoc cham dipping sauce']",45,30,4,400,"['gluten-free', 'dairy-free']"
+Spanish Gambas al Ajillo (Garlic Shrimp),Spanish,"['Shrimp', 'Garlic', 'Olive oil', 'Dried red chili flakes', 'Parsley', 'Salt']",15,10,4,,['nan']
+French Shallots Sauté,French,"['thyme', 'cream', 'butter', 'garlic']",71,43,1,434,"['dairy-free, gluten-free']"
+Peruvian SweetPotato Bowl,Peruvian,"['sweet potato', 'aji amarillo', 'corn', 'cilantro']",76,18,3,231,['nan']
+Swedish Lingonberries Wrap,Swedish,"['potatoes', 'lingonberries', 'cream', 'salmon']",51,32,6,709,"['gluten-free, nut-free']"
+Italian Mozzarella Rolls,Italian,"['garlic', 'pasta', 'olive oil', 'mozzarella']",54,23,5,383,"['vegetarian, gluten-free']"
+Australian Lamb Delight,Australian,"['barley', 'egg', 'lamb', 'beetroot']",51,10,5,400,['vegan']
+Japanese Tofu Feast,Japanese,"['mirin', 'sushi rice', 'rice vinegar', 'ginger', 'wasabi', 'nori', 'soy sauce']",41,19,5,224,['nut-free']
+Swedish Salmon Wrap,Swedish,"['cream', 'potatoes', 'lingonberries', 'salmon', 'dill']",18,5,3,539,['vegan']
+Swedish Potatoes Delight,Swedish,"['potatoes', 'lingonberries', 'salmon', 'cream']",51,36,4,372,['nan']
+Brazilian Beef Curry,Brazilian,"['cassava', 'rice', 'beef', 'orange', 'collard greens']",23,9,5,492,['vegan']
+Australian Egg Stew,Australian,"['lamb', 'pineapple', 'barley', 'beetroot']",68,33,1,234,['vegetarian']
+Mexican ChiliPowder Medley,Mexican,"['tortillas', 'corn', 'chili powder', 'beans']",22,20,6,784,['nan']
+Ethiopian SpicedButter Medley,Ethiopian,"['lentils', 'spiced butter', 'berbere', 'injera', 'collard greens']",25,7,1,413,['vegetarian']
+Nigerian Okra Stew,Nigerian,"['egusi', 'cassava', 'plantains', 'yams', 'okra']",28,12,1,299,['vegetarian']
+Polynesian Breadfruit Medley,Polynesian,"['fish', 'taro', 'banana', 'breadfruit', 'coconut milk']",20,29,2,430,['vegan']
+Japanese Miso Medley,Japanese,"['ginger', 'mirin', 'miso', 'sushi rice', 'wasabi', 'nori']",31,23,2,555,['nan']
+Ethiopian SpicedButter Wrap,Ethiopian,"['injera', 'lentils', 'berbere', 'collard greens']",12,25,3,712,['vegan']
+Korean Scallions Wrap,Korean,"['garlic', 'gochujang', 'kimchi', 'sesame oil', 'soy sauce', 'scallions']",83,10,3,428,['nan']
+Spanish Rice Stew,Spanish,"['rice', 'chorizo', 'peppers', 'saffron', 'paprika', 'olive oil']",41,7,5,220,['nan']
+Argentinian Chimichurri Wrap,Argentinian,"['beef', 'chimichurri', 'garlic', 'oregano', 'red wine']",19,23,6,392,['nan']
+Japanese Miso Wrap,Japanese,"['wasabi', 'mirin', 'ginger', 'sushi rice', 'nori']",57,24,2,397,['nan']
+Peruvian AjiAmarillo Feast,Peruvian,"['cilantro', 'lime', 'corn', 'aji amarillo']",45,17,6,550,['nan']
+Swedish Lingonberries Medley,Swedish,"['lingonberries', 'potatoes', 'dill', 'cream']",74,36,5,782,['nut-free']
+Thai Galangal Medley,Thai,"['coconut milk', 'basil', 'fish sauce', 'peanuts', 'lemongrass', 'lime']",19,35,3,562,['nan']
+Chinese Five-Spice Delight,Chinese,"['five-spice', 'bok choy', 'rice wine', 'garlic', 'scallions', 'soy sauce']",56,32,2,510,['vegan']
+Nigerian PalmOil Curry,Nigerian,"['yams', 'plantains', 'cassava', 'palm oil', 'egusi']",47,18,3,595,['dairy-free']
+Thai Lime Grill,Thai,"['lime', 'basil', 'lemongrass', 'peanuts', 'chili', 'fish sauce', 'galangal']",90,10,2,229,['nan']
+Korean Scallions Delight,Korean,"['garlic', 'sesame oil', 'soy sauce', 'gochujang', 'kimchi', 'scallions']",86,7,6,437,['vegan']
+Nigerian Cassava Feast,Nigerian,"['palm oil', 'okra', 'egusi', 'cassava', 'yams', 'plantains']",39,44,3,389,['nan']
+American Corn Curry,American,"['bacon', 'beef', 'mustard', 'corn', 'cheddar']",58,30,1,749,['nan']
+Brazilian BlackBeans Curry,Brazilian,"['black beans', 'cassava', 'collard greens', 'orange', 'rice']",65,21,3,321,['vegetarian']
