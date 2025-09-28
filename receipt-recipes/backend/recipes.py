@@ -12,7 +12,7 @@ client = MongoClient("mongodb://localhost:27017")
 
 db = client["Recipes"]
 collection = db["Recipes"]
-csv_path = Path(r"Receipes from around the world.csv") 
+csv_path = Path(r"../../Receipes from around the world.csv") 
 open_kwargs = {         
     "mode": "r",
     "encoding": "utf-8",
@@ -53,16 +53,16 @@ class GeminiClient:
         base_prompt = "You have these recipes:\n\n"
         base_prompt += "You have these ingredients" + actualingredients
         recipe_texts = []
-        for doc in recipes:
+        for doc in recipes[0]:
             title = doc.get("title", "")
             ingredients = doc.get("ingredients", "")
             steps = doc.get("servings", "")
-            recipe_texts.append(f"• {title}\n  Ingredients: {ingredients}\Servings: {steps}\n")
+            recipe_texts.append(f"• {title} Ingredients: {ingredients}\nServings: {steps}")
             # print(ingredients) # debugging only
             self.context = base_prompt + "\n".join(recipe_texts)
 
     def ask(self):
-        question = "Please choose at least 3 recipes that contain these items. Make the necessary substitions as needed."
+        question = "Please choose at least 3 recipes that contain these items. Make the necessary substitions as needed. Ignore any words that are not abbreviated ingredients."
         prompt = self.context + f"\n\nQuestion: {question}\nAnswer:"
         response: GenerateContentResponse = self.model.generate_content(prompt)
         return response
