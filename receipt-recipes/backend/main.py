@@ -1,18 +1,31 @@
 from fastapi import FastAPI, UploadFile, File
 from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware
 from pymongo import MongoClient
 import os, shutil
 
 app = FastAPI()
+origins = [
+    "http://localhost:5173"
+]
 
 client = MongoClient("mongodb://localhost:27017/")
 db = client["recipes_db"]       # database
 collection = db["recipes"]      # collection
-
-app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins, # React app URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
 UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
+
+@app.get("/")
+async def main():
+    return {"message": "Hello World"}
 
 @app.post("/uploads/")
 async def upload_receipt(file: UploadFile = File(...)):
