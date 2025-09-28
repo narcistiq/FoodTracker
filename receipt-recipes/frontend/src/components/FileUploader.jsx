@@ -38,6 +38,7 @@ export default function FileUploader() {
     }
     return (
         <div className="flex flex-col items-start min-h-screen p-6 space-y-1">
+            <h1>Receipt Recipe</h1>
             <input type='file' ref={fileInputRef} onChange={handleFileChange} style={{ display: "none" }}/>
             {file && (
                 <div className="uploads-section rounded-lg bg-white p-6 shadow-md w-full sm:w-96">

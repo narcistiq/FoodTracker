@@ -1,3 +1,13 @@
+body {
+    font-weight: bold;
+    color: #02020B
+    
+}
+.uploads-section {
+  border-radius: 8px;
+  background-color: rgb(220, 211, 161);
+  padding: 24px;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -5,19 +15,7 @@ button {
   font-size: 1em;
   font-weight: bold;
   font-family: inherit;
-  background-color: #1C1A3B;
+  background-color:#7FB069;
   cursor: pointer;
   transition: border-color 0.25s;
-  color: white;
-}
-body {
-    font-weight: bold;
-    color: white;
-    
-}
-.uploads-section {
-  border-radius: 12px;   /* rounded corners */
-  background-color: #7a542e;
-  padding: 24px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
