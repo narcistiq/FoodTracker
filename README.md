@@ -11,6 +11,8 @@ Make sure you have the following installed on your system:
 - **npm** as the package manager
 - **MongoDB** (for recipe storage)
 
+Before running, please make sure to download the [MongoDB Community Server](https://www.mongodb.com/try/download/community) and [Node.js](https://nodejs.org/en/download).
+
 ## 🚀 Setup Instructions
 
 ### 1. Clone the Repository
