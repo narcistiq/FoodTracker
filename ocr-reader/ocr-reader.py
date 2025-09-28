@@ -67,7 +67,7 @@ if __name__ == "__main__":
     OUTPUT_FILE = "output.txt"
 
     # Get all images in folder
-    FOLDER = "./uploads"    
+    FOLDER = "../receipt-recipes/backend/uploads"    
     files = get_files(FOLDER)
     print(str(len(files)) + " files to process.")
 
