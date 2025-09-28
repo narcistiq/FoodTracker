@@ -110,19 +110,57 @@ def generate_recipes(ingredients_text: list[str]):
                 {
                     "name": "Tomato Chicken Pasta",
                     "servings": "4",
-                    "ingredients": ["diced tomatoes", "boneless chicken breast", "pasta", "garlic"],
+                    "prep_time": "15 minutes",
+                    "cook_time": "25 minutes",
+                    "ingredients": ["diced tomatoes", "boneless chicken breast", "pasta", "garlic", "olive oil", "salt", "pepper"],
+                    "instructions": [
+                        "Boil water in a large pot and cook pasta according to package directions",
+                        "Season chicken breast with salt and pepper, then cut into bite-sized pieces",
+                        "Heat olive oil in a large skillet over medium-high heat",
+                        "Cook chicken pieces until golden brown and cooked through, about 6-8 minutes",
+                        "Add minced garlic and cook for 1 minute until fragrant",
+                        "Add diced tomatoes and simmer for 10 minutes until sauce thickens",
+                        "Drain pasta and add to the skillet with chicken and tomatoes",
+                        "Toss everything together and serve hot"
+                    ],
                     "substitutions": "Can substitute chicken with impossible burger for vegetarian option"
                 },
                 {
                     "name": "Bell Pepper Stir Fry",
-                    "servings": "2", 
-                    "ingredients": ["green bell peppers", "red bell peppers", "organic carrots", "chicken broth"],
+                    "servings": "2",
+                    "prep_time": "10 minutes", 
+                    "cook_time": "12 minutes",
+                    "ingredients": ["green bell peppers", "red bell peppers", "organic carrots", "chicken broth", "soy sauce", "garlic", "ginger"],
+                    "instructions": [
+                        "Wash and slice bell peppers into strips",
+                        "Peel and slice carrots diagonally into thin pieces",
+                        "Mince garlic and ginger",
+                        "Heat oil in a wok or large skillet over high heat",
+                        "Add carrots first and stir-fry for 3-4 minutes",
+                        "Add bell peppers and continue stir-frying for 3-4 minutes",
+                        "Add garlic and ginger, stir-fry for 1 minute",
+                        "Pour in chicken broth and soy sauce, cook for 2 minutes",
+                        "Serve immediately over rice"
+                    ],
                     "substitutions": "Use vegetable broth instead of chicken broth for vegetarian"
                 },
                 {
                     "name": "Green Bean Casserole",
                     "servings": "6",
-                    "ingredients": ["green beans", "organic carrots", "french dressing", "onions"],
+                    "prep_time": "20 minutes",
+                    "cook_time": "30 minutes",
+                    "ingredients": ["green beans", "organic carrots", "french dressing", "onions", "cream of mushroom soup", "breadcrumbs"],
+                    "instructions": [
+                        "Preheat oven to 350°F (175°C)",
+                        "Trim green beans and cut into 1-inch pieces",
+                        "Peel and dice carrots into small cubes",
+                        "Slice onions thinly",
+                        "Blanch green beans and carrots in boiling water for 5 minutes, then drain",
+                        "In a large bowl, mix vegetables with cream of mushroom soup and french dressing",
+                        "Transfer to a greased 9x13 baking dish",
+                        "Top with sliced onions and breadcrumbs",
+                        "Bake for 25-30 minutes until bubbly and golden on top"
+                    ],
                     "substitutions": "None needed - all ingredients available"
                 }
             ]

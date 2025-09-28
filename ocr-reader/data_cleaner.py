@@ -38,26 +38,26 @@ def llm_clean_up(contents : List[List[str]], API_KEY : str) -> str:
     client = genai.Client(api_key=API_KEY)
     response = client.models.generate_content(
         contents=prompt,
-        model="gemini-2.5-flash"
+        model="gemini-2.0-flash"
     )
 
     return response.text
 
-if __name__ == "__main__":
-    config = dotenv_values(".env")
-    API_KEY = config.get("API_KEY")
-    file = open(OUTPUT_FILE)
-    contents = file.read()
-    file.close()
+# if __name__ == "__main__":
+#     config = dotenv_values(".env")
+#     API_KEY = config.get("GEMINI_API_KEY")
+#     file = open(OUTPUT_FILE)
+#     contents = file.read()
+#     file.close()
 
-    # Convert to literal data value (list of lists)
-    contents = ast.literal_eval(contents)
+#     # Convert to literal data value (list of lists)
+#     contents = ast.literal_eval(contents)
 
-    # Clean data before sending to LLM
-    cleaned = remove_numbers(contents)
+#     # Clean data before sending to LLM
+#     cleaned = remove_numbers(contents)
     
-    # Call LLM to clean up data
-    response = llm_clean_up(cleaned, API_KEY)
+#     # Call LLM to clean up data
+#     response = llm_clean_up(cleaned, API_KEY)
 
-    with open(CLEANED_FILE, "w") as file:
-        file.write(str(response))
+#     with open(CLEANED_FILE, "w") as file:
+#         file.write(str(response))

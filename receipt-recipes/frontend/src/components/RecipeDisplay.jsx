@@ -14,9 +14,23 @@ const RecipeDisplay = ({ recipes }) => {
           <div key={index} className="recipe-card">
             <div className="recipe-header">
               <h3 className="recipe-name">{recipe.name}</h3>
-              <div className="recipe-servings">
-                <span className="servings-label">Servings:</span>
-                <span className="servings-count">{recipe.servings}</span>
+              <div className="recipe-meta">
+                <div className="recipe-servings">
+                  <span className="servings-label">Servings:</span>
+                  <span className="servings-count">{recipe.servings}</span>
+                </div>
+                {recipe.prep_time && (
+                  <div className="recipe-time">
+                    <span className="time-label">Prep:</span>
+                    <span className="time-value">{recipe.prep_time}</span>
+                  </div>
+                )}
+                {recipe.cook_time && (
+                  <div className="recipe-time">
+                    <span className="time-label">Cook:</span>
+                    <span className="time-value">{recipe.cook_time}</span>
+                  </div>
+                )}
               </div>
             </div>
             
@@ -29,6 +43,17 @@ const RecipeDisplay = ({ recipes }) => {
                   ))}
                 </ul>
               </div>
+              
+              {recipe.instructions && recipe.instructions.length > 0 && (
+                <div className="instructions-section">
+                  <h4 className="section-title">Instructions</h4>
+                  <ol className="instructions-list">
+                    {recipe.instructions.map((step, idx) => (
+                      <li key={idx} className="instruction-step">{step}</li>
+                    ))}
+                  </ol>
+                </div>
+              )}
               
               {recipe.substitutions && (
                 <div className="substitutions-section">

@@ -35,7 +35,7 @@ recipes = list(collection.find({}, {"_id": 0}))
 
 class GeminiClient:
     def __init__(self):
-        genai.configure(api_key=os.getenv("APIKEY"))
+        genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
         self.model = genai.GenerativeModel(
             "gemini-2.0-flash",
             config={
@@ -51,9 +51,12 @@ class GeminiClient:
                                     "name": {"type": "string"},
                                     "servings": {"type": "string"},
                                     "ingredients": {"type": "array", "items": {"type": "string"}},
+                                    "instructions": {"type": "array", "items": {"type": "string"}},
+                                    "prep_time": {"type": "string"},
+                                    "cook_time": {"type": "string"},
                                     "substitutions": {"type": "string"}
                                 },
-                                "required": ["name", "servings", "ingredients"]
+                                "required": ["name", "servings", "ingredients", "instructions"]
                             }
                         }
                     },
