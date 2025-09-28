@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react';
-import axios from 'axios';
 import './FileUploader.css';
 
 const UploadStatus = {
@@ -17,19 +16,22 @@ export default function FileUploader() {
             setFile(e.target.files[0]);
         }
     }
-    async function handleFileUpload() {
-        if (!file) return;
-        setStatus(UploadStatus.UPLOADING);
+    const handleFileUpload = (e) => {
         const formData = new FormData();
-        formData.append('file', file);
-        try{
-            await axios.post('https://httpbin.org/post', formData, {
-                headers: {
-                    'Content-Type': 'multipart/form-data'
-                }
-            });
-            setStatus(UploadStatus.SUCCESS)
-        } catch {setStatus(UploadStatus.ERROR)};
+        formData.append(
+            "file",
+            file,
+            file.name
+        );
+        const requestOptions = {
+            method: 'POST',
+            body: formData
+        };
+        fetch('http://127.0.0.1:8000/uploads/', requestOptions)
+        .then(response => response.json())
+        .then(function(response) {
+            console.log(response)
+        })
     }
     function handleButtonClick() {
         fileInputRef.current.click();
